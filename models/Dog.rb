@@ -21,6 +21,8 @@ class Dog
 	def color=(color)
 		@color = color
 		case @color 
+		when "tan"
+			@color = "#B7915E"
 		when "brown"
 			@color = "#6F3518"
 		when "white"
