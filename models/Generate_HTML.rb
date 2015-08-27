@@ -47,7 +47,7 @@ class Generate_HTML
 	#you can also add a file path to your file name!
 
 
-    file_name = "#{person.name}_#{dog.name}_#{date.month}-#{date.day}.html"
+    file_name = "best_pals/#{person.name}_#{dog.name}_#{date.month}-#{date.day}.html"
                 #ex. "giancarlo_perry_8-25.html"
 
     #then we create our file using the following method. the W+ flag means that it is writable. 
@@ -58,7 +58,7 @@ class Generate_HTML
 	#see a variable you didnt set? Check out the model for that class!
 
 	#first we send in our stylesheet
-    css = "<link rel=\"stylesheet\" href=\"css/stylesheet.css\" type=\"text/css\">"
+    css = "<link rel=\"stylesheet\" href=\"../css/stylesheet.css\" type=\"text/css\">"
     file.write(css)
 
     #then we send in our html template, notice the interpolated variables...
@@ -66,19 +66,19 @@ class Generate_HTML
 	html = "<div class=\"flex-container\">
 
 				<div id=\"person\" >
-				<img src=\"images/#{person.silhouette}\" style=\"background: #{person.color}\">
+				<img src=\"../images/#{person.silhouette}\" style=\"background: #{person.color}\">
 				</div>
                 
 				<div id=\"dog\">
 					<div class=\"bubble-container\">
 						<div>
-						<img class=\"bubble\" src=\"images/bubble.png\" />
+						<img class=\"bubble\" src=\"../images/bubble.png\" />
 						<div class=\"bubble-text\">
 						Hi, I\'m #{person.name}, <br> and this is #{dog.name}
 						</div>
 						</div>
 					</div>
-				<img class=\"dog\" src=\"images/#{dog.silhouette}\" 
+				<img class=\"dog\" src=\"../images/#{dog.silhouette}\" 
 					style=\"background: #{dog.color}\">
 				</div>
 
