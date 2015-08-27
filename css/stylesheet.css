@@ -1,0 +1,39 @@
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	margin-left:50px;
+}
+
+#person,
+#dog {
+	max-width: 50%;
+	position: relative;
+}
+
+#dog img.dog {
+	position: absolute;
+	bottom: 0;
+}
+
+.bubble-container {
+	position: relative;
+}
+
+.bubble-text {
+	border-radius: 50%;
+    padding-top: 80px;
+    padding-left: 80px;
+    font-size: 18px;
+}
+
+img.bubble {
+	width: 300px;
+	z-index: 1000;
+	position: absolute;
+}
+
+
+/* USING FLEXBOX and CONTAINERS:
+
+When you position elements side by side, they will not always align, even if you set their width to be 50% and to display as "inline-block"s. A trick is to use Flexbox! Flexbox is a phenomenal css attribute that has a lot of powerful features for layouts. However, even with flexbox, the two items may be side by side (horizontally aligned) but not vertically aligned. Another trick is to use containers. In our case, the #dog and #person ids are our container divs and our images are inside of them. The trick is that by positioning the containers as "relative", you can position their contents as "absolute", allowing you to align them to the bottom or top of the containers. If you dont relatively position the container, the absolutely positioned content will break out of the container and run amock. */
