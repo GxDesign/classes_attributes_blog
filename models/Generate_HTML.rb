@@ -16,22 +16,20 @@ class Generate_HTML
 
 	#Because your variable is now an object (instance of Person), you can use all of the built in methods of that Person class, such as .name.
 
-	person.name = "INSERT NAME, one word"
+	person.name = "INSERT NAME, ONE WORD"
 
 	person.gender = "INSERT male OR female"
 
-	person.color = "INSERT white, tan, brown or black"
+	person.color = "INSERT white, tan, brown OR black"
 
 
 	dog = Dog.new
 
-	dog.name = "INSERT NAME, one word"
+	dog.name = "INSERT NAME, ONE WORD"
 
-	dog.color = "INSERT brown, white, tan, or black"
+	dog.color = "INSERT white, tan, brown OR black"
 
-	dog.breed = "INSERT yorkie, labrador, bulldog or great dane"
-
-
+	dog.breed = "INSERT yorkie, labrador OR great dane"
 
 
 
@@ -71,15 +69,12 @@ class Generate_HTML
                 
 				<div id=\"dog\">
 					<div class=\"bubble-container\">
-						<div>
-						<img class=\"bubble\" src=\"../images/bubble.png\" />
+					<img class=\"bubble\" src=\"../images/bubble.png\" />
 						<div class=\"bubble-text\">
-						Hi, I\'m #{person.name}, <br> and this is #{dog.name}
-						</div>
+							Hi, I\'m #{person.name}, <br> and this is #{dog.name}
 						</div>
 					</div>
-				<img class=\"dog\" src=\"../images/#{dog.silhouette}\" 
-					style=\"background: #{dog.color}\">
+					<img class=\"dog\" src=\"../images/#{dog.silhouette}\" style=\"background: #{dog.color}\">
 				</div>
 
 			</div>"

@@ -2,7 +2,9 @@
 .flex-container {
 	display: flex;
 	flex-direction: row;
-	margin-left:50px;
+	background: #a9eaff;
+	width: 977px;
+	margin: 0 auto;
 }
 
 #person,
@@ -24,7 +26,9 @@
 	border-radius: 50%;
     padding-top: 80px;
     padding-left: 80px;
-    font-size: 18px;
+    font-size: 20px;
+    position: relative;
+    z-index: 1000;
 }
 
 img.bubble {
@@ -36,4 +40,13 @@ img.bubble {
 
 /* USING FLEXBOX and CONTAINERS:
 
-When you position elements side by side, they will not always align, even if you set their width to be 50% and to display as "inline-block"s. A trick is to use Flexbox! Flexbox is a phenomenal css attribute that has a lot of powerful features for layouts. However, even with flexbox, the two items may be side by side (horizontally aligned) but not vertically aligned. Another trick is to use containers. In our case, the #dog and #person ids are our container divs and our images are inside of them. The trick is that by positioning the containers as "relative", you can position their contents as "absolute", allowing you to align them to the bottom or top of the containers. If you dont relatively position the container, the absolutely positioned content will break out of the container and run amock. */
+When you position elements side by side, they will not always align, even if you set their width to be 50% and to display as "inline-block"s. A trick is to use Flexbox! Flexbox is a phenomenal css attribute that has a lot of powerful features for layouts. However, even with flexbox, the two items may be side by side (horizontally aligned) but not vertically aligned. Another trick is to use containers. In our case, the #dog and #person ids are our container divs and our images are inside of them. The trick is that by positioning the containers as "relative", you can position their contents as "absolute", allowing you to align them to the bottom or top of the containers. If you dont relatively position the container, the absolutely positioned content will break out of the container and run amock. 
+
+CENTERING:
+Take a look at the flex container I created and you'll see the margin is set to "0 auto". This is a useful trick for centering an element but only works if you have specified a width.
+
+Z-INDEX:
+
+Lastly, check out the .bubble-text class. See where it says z-index? The z-index allows you to position elements on top of each other as the element with the higher z-index will be displayed on top. If you remove the high z-index it has, the text will be behind the bubble and will not be visible. In order to use z-index, your elements may need a specified position first. 
+
+*/
