@@ -12,24 +12,24 @@ class Generate_HTML
 
 	person = Person.new
 
-	#Keep in mind that the variable is NOT actually your name. You set the variable equal to Person.new, which means the variable is assigned to an object, an instance of the class person. Objects have ids like...
+	#Keep in mind that the variable is NOT actually your name. You set the variable equal to Person.new, which means the variable is assigned to an object, an instance of the class person.
 
 	#Because your variable is now an object (instance of Person), you can use all of the built in methods of that Person class, such as .name.
 
-	person.name = "INSERT NAME, ONE WORD"
+	person.name = "INSERT NAME, one word"
 
-	person.gender = "INSERT male OR female"
+	person.gender = "INSERT GENDER, male or female"
 
-	person.color = "INSERT white, tan, brown OR black"
+	person.color = "INSERT COLOR, white, brown, tan, or black"
 
 
 	dog = Dog.new
 
-	dog.name = "INSERT NAME, ONE WORD"
+	dog.name = "INSERT NAME, one word"
 
-	dog.color = "INSERT white, tan, brown OR black"
+	dog.color = "INSERT COLOR, white, brown, tan, or black"
 
-	dog.breed = "INSERT yorkie, labrador OR great dane"
+	dog.breed = "INSERT BREED, labrador, yorkie, great dane"
 
 
 
